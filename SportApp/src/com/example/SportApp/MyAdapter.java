@@ -31,13 +31,15 @@ public class MyAdapter extends ArrayAdapter {
         //TextView link=(TextView)convertView.findViewById(R.id.textView3);
         ImageView imageView=(ImageView)convertView.findViewById(R.id.imageView);
         imageView.setImageBitmap(venue.bitmap);
+        String link=venue.img;
 
         Button button = (Button)convertView.findViewById(R.id.showMoreBtn);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-              //  Intent intent = new Intent(context, WebViewActivity.class);
-                //context.startActivity(intent);
+                Intent intent = new Intent(context, WebViewActivity.class);
+                intent.putExtra("link", link);
+                context.startActivity(intent);
             }
         });
         description.setText(venue.description);

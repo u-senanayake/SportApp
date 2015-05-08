@@ -14,7 +14,6 @@ import java.io.InputStream;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.concurrent.ExecutionException;
-import com.example.SportApp.MainActivity;
 
 /**
  * Created by Udayanga Senanayake on 5/6/2015.

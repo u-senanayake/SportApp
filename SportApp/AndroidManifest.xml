@@ -14,5 +14,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".ShowDataActivity"/>
+        <activity android:name=".WebViewActivity"/>
     </application>
 </manifest>
