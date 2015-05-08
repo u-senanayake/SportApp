@@ -27,6 +27,10 @@ public class ShowDataActivity extends Activity implements AsyncResponse {
         setContentView(R.layout.list_view);
         webService();
     }
+    public void shareActiv(){
+
+    }
+
     public  void webService() {
         //get value form  intent
         Bundle bundle=getIntent().getExtras();

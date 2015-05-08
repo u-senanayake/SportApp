@@ -2,6 +2,7 @@ package com.example.SportApp;
 
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +11,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import java.util.ArrayList;
+//import 	com.google.android.gms.plus.PlusShare.Builder;
 
 /**
  * Created by Udayanga Senanayake on 5/6/2015.
@@ -42,6 +44,22 @@ public class MyAdapter extends ArrayAdapter {
                 context.startActivity(intent);
             }
         });
+       /* Button shareButton=(Button)convertView.findViewById(R.id.share_button);
+        shareButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                // Launch the Google+ share dialog with attribution to your app.
+                Intent shareIntent = new PlusShare.Builder(this)
+                        .setType("text/plain")
+                        .setText("Welcome to the Google+ platform.")
+                        .setContentUrl(Uri.parse("https://developers.google.com/+/"))
+                        .getIntent();
+
+                startActivityForResult(shareIntent, 0);
+
+            }
+        });*/
         description.setText(venue.description);
         title.setText(venue.title);
         String showLink=venue.link;
